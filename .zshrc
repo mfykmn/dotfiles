@@ -1,7 +1,6 @@
 # 環境変数
 export LANG=ja_JP.UTF-8
 
-
 # 色を使用出来るようにする
 autoload -Uz colors
 colors
@@ -35,10 +34,18 @@ if [ -e /usr/local/share/zsh-completions ]; then
     fpath=(/usr/local/share/zsh-completions $fpath)
 fi
 
-# Pythonパス
-export PYENV_ROOT="${HOME}/.pyenv"
-# Goパス
-export GOPATH="${HOME}/go"
+### path ###
+# pyenv
+export PYENV_ROOT=$HOME/.pyenv
+# Go
+export GOPATH=$HOME/go
+# nodebrew
+export NODE=$HOME/.nodebrew/current
 
-export PATH=${PYENV_ROOT}/bin:${GOPATH}/bin:$PATH
+export PATH=$PYENV_ROOT/bin:$GOPATH/bin:$NODE/bin:$PATH
 eval "$(pyenv init -)"
+
+### alias ###
+alias la='ls -la'
+alias lmysql='mysql -uroot -p1111 -h192.168.99.100'
+alias lcqlsh='cqlsh  192.168.99.100 --cqlversion="3.4.0"'
