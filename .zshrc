@@ -49,3 +49,6 @@ eval "$(pyenv init -)"
 alias la='ls -la'
 alias lmysql='mysql -uroot -p1111 -h192.168.99.100'
 alias lcqlsh='cqlsh  192.168.99.100 --cqlversion="3.4.0"'
+alias g='cd $(ghq root)/$(ghq list | peco)'
+alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
+alias ij='open -b com.jetbrains.intellij $(ghq root)/$(ghq list | peco)'
