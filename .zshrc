@@ -49,6 +49,14 @@ eval "$(pyenv init -)"
 alias la='ls -la'
 alias lmysql='mysql -uroot -p1111 -h192.168.99.100'
 alias lcqlsh='cqlsh  192.168.99.100 --cqlversion="3.4.0"'
+# docker
+alias drma='docker rm $(docker ps -aq)'
+alias drmia='docker rmi $(docker images -q)'
+alias drm='docker rm $(docker ps -a | peco | cut -d" " -f1)'
+alias drmi='docker rmi $(docker images | peco |  sed -e "s/  */ /g" | cut -d" " -f3)'
+# git
 alias g='cd $(ghq root)/$(ghq list | peco)'
 alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
+# editor
 alias ij='open -b com.jetbrains.intellij $(ghq root)/$(ghq list | peco)'
+alias sub='subl $(ghq root)/$(ghq list | peco)'
