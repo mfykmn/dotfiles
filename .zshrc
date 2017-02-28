@@ -5,24 +5,12 @@ export LANG=ja_JP.UTF-8
 autoload -Uz colors
 colors
 
-# ls
+# ls color
 export LSCOLORS=gxfxcxdxbxegedabagacag
 export LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;46'
 
 # 補完候補もLS_COLORSに合わせて色が付くようにする
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-
-# lsがカラー表示になるようエイリアスを設定
-case "${OSTYPE}" in
-darwin*)
-  # Mac
-  alias ls="ls -GF"
-  ;;
-linux*)
-  # Linux
-  alias ls='ls -F --color'
-  ;;
-esac
 
 #ヒストリの設定
 HISTFILE=~/.zsh_history
@@ -46,9 +34,11 @@ export PATH=$PYENV_ROOT/bin:$GOPATH/bin:$NODE/bin:$PATH
 eval "$(pyenv init -)"
 
 ### alias ###
+alias ls='ls -GF'
 alias la='ls -la'
-alias lmysql='mysql -uroot -p1111 -h192.168.99.100'
-alias lcqlsh='cqlsh  192.168.99.100 --cqlversion="3.4.0"'
+alias lsql='mysql -uroot -p1111 -h192.168.99.100'
+alias lcql='cqlsh  192.168.99.100 --cqlversion="3.4.0"'
+alias gunicorn='${PYENV_ROOT}/versions/2.7.10/lib/python2.7/site-packages/gunicorn'
 # docker
 alias drma='docker rm $(docker ps -aq)'
 alias drmia='docker rmi $(docker images -q)'
