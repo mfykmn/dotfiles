@@ -40,13 +40,17 @@ alias lsql='mysql -uroot -p1111 -h192.168.99.100'
 alias lcql='cqlsh  192.168.99.100 --cqlversion="3.4.0"'
 alias gunicorn='${PYENV_ROOT}/versions/2.7.10/lib/python2.7/site-packages/gunicorn'
 # docker
-alias drma='docker rm $(docker ps -aq)'
+alias drma='docker rm -f $(docker ps -aq)'
 alias drmia='docker rmi $(docker images -q)'
 alias drm='docker rm $(docker ps -a | peco | cut -d" " -f1)'
 alias drmi='docker rmi $(docker images | peco |  sed -e "s/  */ /g" | cut -d" " -f3)'
+#alias -g DPP='`docker ps | tail -n +2 | peco | cut -d" " -f1`'
+#alias -g DIP='`docker images | peco |  sed -e "s/  */ /g" | cut -d" " -f3`'
 # git
 alias g='cd $(ghq root)/$(ghq list | peco)'
 alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 # editor
 alias ij='open -b com.jetbrains.intellij $(ghq root)/$(ghq list | peco)'
 alias sub='subl $(ghq root)/$(ghq list | peco)'
+# asta
+alias asta='open -n $(ls *.asta | peco)'
