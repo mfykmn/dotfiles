@@ -39,6 +39,7 @@ eval "$(pyenv init -)"
 ### alias ###
 alias ls='ls -GF'
 alias la='ls -la'
+alias vim='nvim'
 alias lsql='mysql -uroot -p1111 -h192.168.99.100'
 alias lcql='cqlsh  192.168.99.100 --cqlversion="3.4.0"'
 alias gunicorn='${PYENV_ROOT}/versions/2.7.10/lib/python2.7/site-packages/gunicorn'
