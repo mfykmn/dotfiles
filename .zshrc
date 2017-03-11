@@ -29,6 +29,9 @@ export PYENV_ROOT=$HOME/.pyenv
 export GOPATH=$HOME/go
 # nodebrew
 export NODE=$HOME/.nodebrew/current
+# NeoVim
+export XDG_CONFIG_HOME=$HOME/.config
+
 
 export PATH=$PYENV_ROOT/bin:$GOPATH/bin:$NODE/bin:$PATH
 eval "$(pyenv init -)"
