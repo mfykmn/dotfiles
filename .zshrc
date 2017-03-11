@@ -54,3 +54,16 @@ alias ij='open -b com.jetbrains.intellij $(ghq root)/$(ghq list | peco)'
 alias sub='subl $(ghq root)/$(ghq list | peco)'
 # asta
 alias asta='open -n $(ls *.asta | peco)'
+
+### util ###
+bindkey '^]' peco-src
+
+function peco-src() {
+  local src=$(ghq list --full-path | peco --query "$LBUFFER")
+  if [ -n "$src" ]; then
+    BUFFER="cd $src"
+    zle accept-line
+  fi
+  zle -R -c
+}
+zle -N peco-src
