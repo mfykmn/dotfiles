@@ -34,7 +34,7 @@ export NODE=$HOME/.nodebrew/current
 export XDG_CONFIG_HOME=$HOME/.config
 
 
-export PATH=$PYENV_ROOT/bin:$GOENV_ROOT/bin:$GOPATH/bin:$NODE/bin:/usr/local/go/bin:$PATH
+export PATH=$PYENV_ROOT/bin:$GOENV_ROOT/bin:$GOPATH/bin:$NODE/bin:$PATH
 eval "$(pyenv init -)"
 eval "$(goenv init -)"
 
