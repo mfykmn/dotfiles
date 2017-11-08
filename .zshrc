@@ -27,14 +27,16 @@ fi
 export PYENV_ROOT=$HOME/.pyenv
 # Go
 export GOPATH=$HOME/go
+export GOENV_ROOT=$HOME/.goenv
 # nodebrew
 export NODE=$HOME/.nodebrew/current
 # NeoVim
 export XDG_CONFIG_HOME=$HOME/.config
 
 
-export PATH=$PYENV_ROOT/bin:$GOPATH/bin:$NODE/bin:$PATH
+export PATH=$PYENV_ROOT/bin:$GOENV_ROOT/bin:$GOPATH/bin:$NODE/bin:/usr/local/go/bin:$PATH
 eval "$(pyenv init -)"
+eval "$(goenv init -)"
 
 ### alias ###
 alias ls='ls -GF'
