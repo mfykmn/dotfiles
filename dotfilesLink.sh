@@ -11,3 +11,6 @@ ln -sf ~/dotfiles/.zshrc ~/.zshrc
 
 ### Sierra
 ln -sf ~/dotfiles/karabiner.json ~/.config/karabiner/karabiner.json
+
+### Goenv
+ln -s ~/.goenv ~/goenv
