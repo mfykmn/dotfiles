@@ -74,6 +74,10 @@ function peco-src() {
 }
 zle -N peco-src
 
+
+### direnv
+eval "$(direnv hook zsh)"
+
 ### GCP
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '${HOME}/google-cloud-sdk/path.zsh.inc' ]; then source '${HOME}/google-cloud-sdk/path.zsh.inc'; fi
