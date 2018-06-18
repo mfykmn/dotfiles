@@ -7,7 +7,7 @@ ln -sf ~/dotfiles/vim/dein.toml ~/.config/nvim/dein.toml
 ln -sf ~/dotfiles/vim/dein_lasy.toml ~/.config/nvim/dein_lasy.toml
 
 ### zsh
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/zsh/.zshrc ~/.zshrc
 
 ### Sierra
 ln -sf ~/dotfiles/karabiner.json ~/.config/karabiner/karabiner.json
