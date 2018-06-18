@@ -14,3 +14,6 @@ ln -sf ~/dotfiles/karabiner.json ~/.config/karabiner/karabiner.json
 
 ### Goenv
 ln -s ~/.goenv ~/goenv
+
+### tmux
+ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
