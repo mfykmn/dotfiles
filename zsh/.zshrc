@@ -41,6 +41,7 @@ eval "$(goenv init -)"
 ### alias ###
 alias ls='ls -GF'
 alias la='ls -la'
+alias gitl='git log --graph --all --format="%x09%an%x09%h %d %s"'
 alias vim='nvim'
 alias lsql='mysql -uroot -p1111 -h192.168.99.100'
 alias lcql='cqlsh  192.168.99.100 --cqlversion="3.4.0"'
