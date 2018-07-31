@@ -58,6 +58,7 @@ alias g='cd $(ghq root)/$(ghq list | peco)'
 alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 # editor
 alias ij='open -b com.jetbrains.intellij $(ghq root)/$(ghq list | peco)'
+alias goland='open -b com.jetbrains.goland $(ghq root)/$(ghq list | peco)'
 alias sub='subl $(ghq root)/$(ghq list | peco)'
 # vim
 alias v='vim $(ghq root)/$(ghq list | peco)' 
