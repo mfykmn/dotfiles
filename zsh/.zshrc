@@ -53,17 +53,22 @@ alias drm='docker rm $(docker ps -a | peco | cut -d" " -f1)'
 alias drmi='docker rmi $(docker images | peco |  sed -e "s/  */ /g" | cut -d" " -f3)'
 #alias -g DPP='`docker ps | tail -n +2 | peco | cut -d" " -f1`'
 #alias -g DIP='`docker images | peco |  sed -e "s/  */ /g" | cut -d" " -f3`'
+
 # git
 alias g='cd $(ghq root)/$(ghq list | peco)'
 alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
+
 # editor
-alias ij='open -b com.jetbrains.intellij $(ghq root)/$(ghq list | peco)'
-alias goland='open -b com.jetbrains.goland $(ghq root)/$(ghq list | peco)'
-alias webstorm='open -b com.jetbrains.webstorm $(ghq root)/$(ghq list | peco)'
-alias phpstorm='open -b com.jetbrains.phpstorm $(ghq root)/$(ghq list | peco)'
-alias sub='subl $(ghq root)/$(ghq list | peco)'
+alias iide='open -b com.jetbrains.intellij $(ghq root)/$(ghq list | peco)'
+alias gide='open -b com.jetbrains.goland $(ghq root)/$(ghq list | peco)'
+alias wide='open -b com.jetbrains.webstorm $(ghq root)/$(ghq list | peco)'
+alias pide='open -b com.jetbrains.phpstorm $(ghq root)/$(ghq list | peco)'
+alias pyide='open -b com.jetbrains.pycharm $(ghq root)/$(ghq list | peco)'
+alias side='subl $(ghq root)/$(ghq list | peco)'
+
 # vim
 alias v='vim $(ghq root)/$(ghq list | peco)' 
+
 # asta
 alias asta='open -n $(ls *.asta | peco)'
 
@@ -90,3 +95,5 @@ if [ -f '${HOME}/google-cloud-sdk/path.zsh.inc' ]; then source '${HOME}/google-c
 
 # The next line enables shell command completion for gcloud.
 if [ -f '${HOME}/google-cloud-sdk/completion.zsh.inc' ]; then source '${HOME}/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

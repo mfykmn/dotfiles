@@ -1,0 +1,21 @@
+[user]
+  name = mafuyuk
+  email = mafuyuk.m@gmail.com
+
+[color]
+  ui = auto
+
+[push]
+  default = current
+
+[core]
+  excludesfile = ~/dotfiles/git/.gitignore_global
+
+[ghq]
+  root = ~/go/src
+
+[init]
+  templatedir = ~/.git_template/hooks
+
+[fetch]
+  prune = true

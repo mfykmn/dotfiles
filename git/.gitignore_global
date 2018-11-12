@@ -84,4 +84,7 @@ Session.vim
 # auto-generated tag files
 tags
 
+# JetBrains
+projectFilesBackup/
+
 # End of https://www.gitignore.io/api/intellij+iml,macos,osx,vim
