@@ -22,3 +22,9 @@ ln -nfs  ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -nfs ~/dotfiles/git/.gitconfig ~/.gitconfig
 mkdir -p ~/.git_template/hooks
 ln -nfs  ~/dotfiles/git/hooks ~/.git_template/hooks
+
+### Launchd
+# \ はエイリアス無効化
+\cp -rf ./launch-agents/* ~/Library/LaunchAgents
+launchctl unload ~/Library/LaunchAgents/docker-clean.plist
+launchctl load ~/Library/LaunchAgents/docker-clean.plist
