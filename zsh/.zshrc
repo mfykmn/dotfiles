@@ -26,7 +26,7 @@ fi
 # pyenv
 export PYENV_ROOT=$HOME/.pyenv
 # Go
-export GOPATH=$HOME/go
+export GOPATH=$HOME/repo
 export GOENV_ROOT=$HOME/.goenv
 # nodebrew
 export NODE=$HOME/.nodebrew/current
