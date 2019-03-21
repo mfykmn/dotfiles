@@ -62,6 +62,7 @@ alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 # editor
 alias iide='open -b com.jetbrains.intellij $(ghq root)/$(ghq list | peco)'
 alias gide='open -b com.jetbrains.goland $(ghq root)/$(ghq list | peco)'
+alias gide='open -b com.jetbrains.goland-EAP $(ghq root)/$(ghq list | peco)'
 alias wide='open -b com.jetbrains.webstorm $(ghq root)/$(ghq list | peco)'
 alias pide='open -b com.jetbrains.phpstorm $(ghq root)/$(ghq list | peco)'
 alias pyide='open -b com.jetbrains.pycharm $(ghq root)/$(ghq list | peco)'
@@ -96,5 +97,8 @@ if [ -f '${HOME}/google-cloud-sdk/path.zsh.inc' ]; then source '${HOME}/google-c
 
 # The next line enables shell command completion for gcloud.
 if [ -f '${HOME}/google-cloud-sdk/completion.zsh.inc' ]; then source '${HOME}/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Go
+export GO111MODULE=on
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
