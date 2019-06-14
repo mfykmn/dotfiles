@@ -59,6 +59,11 @@ alias drmi='docker rmi $(docker images | peco |  sed -e "s/  */ /g" | cut -d" " 
 alias g='cd $(ghq root)/$(ghq list | peco)'
 alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 
+# Haskel
+alias ghc='stack ghc --'
+alias ghci='stack ghci --'
+alias runhaskell='stack runhaskell --'
+
 # editor
 alias iide='open -b com.jetbrains.intellij $(ghq root)/$(ghq list | peco)'
 alias gide='open -b com.jetbrains.goland $(ghq root)/$(ghq list | peco)'
