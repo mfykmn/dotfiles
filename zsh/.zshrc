@@ -36,6 +36,9 @@ export XDG_CONFIG_HOME=$HOME/.config
 
 export PATH=$PYENV_ROOT/bin:$GOENV_ROOT/bin:$GOPATH/bin:$NODE/bin:$PATH
 eval "$(pyenv init -)"
+
+# GOENV
+export GOENV_DISABLE_GOPATH=1
 eval "$(goenv init -)"
 
 ### alias ###
@@ -62,7 +65,6 @@ alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 # editor
 alias iide='open -b com.jetbrains.intellij $(ghq root)/$(ghq list | peco)'
 alias gide='open -b com.jetbrains.goland $(ghq root)/$(ghq list | peco)'
-alias gide='open -b com.jetbrains.goland-EAP $(ghq root)/$(ghq list | peco)'
 alias wide='open -b com.jetbrains.webstorm $(ghq root)/$(ghq list | peco)'
 alias pide='open -b com.jetbrains.phpstorm $(ghq root)/$(ghq list | peco)'
 alias pyide='open -b com.jetbrains.pycharm $(ghq root)/$(ghq list | peco)'
