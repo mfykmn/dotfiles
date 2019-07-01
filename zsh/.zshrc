@@ -26,7 +26,7 @@ fi
 # pyenv
 export PYENV_ROOT=$HOME/.pyenv
 # Go
-export GOPATH=$HOME/go
+export GOPATH=$HOME/repo
 export GOENV_ROOT=$HOME/.goenv
 # nodebrew
 export NODE=$HOME/.nodebrew/current
@@ -36,6 +36,9 @@ export XDG_CONFIG_HOME=$HOME/.config
 
 export PATH=$PYENV_ROOT/bin:$GOENV_ROOT/bin:$GOPATH/bin:$NODE/bin:$PATH
 eval "$(pyenv init -)"
+
+# GOENV
+export GOENV_DISABLE_GOPATH=1
 eval "$(goenv init -)"
 
 ### alias ###
@@ -101,5 +104,8 @@ if [ -f '${HOME}/google-cloud-sdk/path.zsh.inc' ]; then source '${HOME}/google-c
 
 # The next line enables shell command completion for gcloud.
 if [ -f '${HOME}/google-cloud-sdk/completion.zsh.inc' ]; then source '${HOME}/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Go
+export GO111MODULE=on
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
