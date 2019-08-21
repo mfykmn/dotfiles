@@ -70,6 +70,7 @@ alias runhaskell='stack runhaskell --'
 # editor
 alias intelij='open -b com.jetbrains.intellij $(ghq root)/$(ghq list | peco)'
 alias goland='open -b com.jetbrains.goland $(ghq root)/$(ghq list | peco)'
+alias clion='open -b com.jetbrains.clion $(ghq root)/$(ghq list | peco)'
 alias webstorm='open -b com.jetbrains.webstorm $(ghq root)/$(ghq list | peco)'
 alias phpstorm='open -b com.jetbrains.phpstorm $(ghq root)/$(ghq list | peco)'
 alias pycharm='open -b com.jetbrains.pycharm $(ghq root)/$(ghq list | peco)'
