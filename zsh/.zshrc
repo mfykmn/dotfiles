@@ -68,12 +68,12 @@ alias ghci='stack ghci --'
 alias runhaskell='stack runhaskell --'
 
 # editor
-alias iide='open -b com.jetbrains.intellij $(ghq root)/$(ghq list | peco)'
-alias gide='open -b com.jetbrains.goland $(ghq root)/$(ghq list | peco)'
-alias wide='open -b com.jetbrains.webstorm $(ghq root)/$(ghq list | peco)'
-alias pide='open -b com.jetbrains.phpstorm $(ghq root)/$(ghq list | peco)'
-alias pyide='open -b com.jetbrains.pycharm $(ghq root)/$(ghq list | peco)'
-alias side='subl $(ghq root)/$(ghq list | peco)'
+alias intelij='open -b com.jetbrains.intellij $(ghq root)/$(ghq list | peco)'
+alias goland='open -b com.jetbrains.goland $(ghq root)/$(ghq list | peco)'
+alias webstorm='open -b com.jetbrains.webstorm $(ghq root)/$(ghq list | peco)'
+alias phpstorm='open -b com.jetbrains.phpstorm $(ghq root)/$(ghq list | peco)'
+alias pycharm='open -b com.jetbrains.pycharm $(ghq root)/$(ghq list | peco)'
+alias subl='subl $(ghq root)/$(ghq list | peco)'
 
 # vim
 alias v='vim $(ghq root)/$(ghq list | peco)' 
