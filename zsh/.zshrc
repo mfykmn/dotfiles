@@ -17,6 +17,11 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
+# prompt
+#PROMPT='%{${fg[cyan]}%} $n %{${reset_color}%}'
+PROMPT='[%F{magenta}%B%n%b%f]$ '
+RPROMPT='[%F{green}%d%f]'
+
 # zshの補完を強化
 if [ -e /usr/local/share/zsh-completions ]; then
     fpath=(/usr/local/share/zsh-completions $fpath)
@@ -34,7 +39,7 @@ export NODE=$HOME/.nodebrew/current
 export XDG_CONFIG_HOME=$HOME/.config
 
 
-export PATH=$PYENV_ROOT/bin:$GOENV_ROOT/bin:$GOPATH/bin:$NODE/bin:$PATH
+export PATH=$PYENV_ROOT/bin:$GOENV_ROOT/bin:$GOPATH/bin:$NODE/bin:$HOME/Library/Python/3.7/bin:$PATH
 eval "$(pyenv init -)"
 
 # GOENV
