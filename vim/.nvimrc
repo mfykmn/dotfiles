@@ -558,5 +558,5 @@ else
   let g:airline_symbols.linenr = ''
 endif
 
-let g:python_host_prog=$PYENV_ROOT.'/versions/2.7.17/bin/python'
-let g:python3_host_prog=$PYENV_ROOT.'/versions/3.8.1/bin/python'
+let g:python_host_prog=$PYENV_ROOT.'/bin/python'
+let g:python3_host_prog=$PYENV_ROOT.'/bin/python3'
