@@ -1,3 +1,6 @@
+#####################################################################################
+### zsh ###
+#####################################################################################
 # 環境変数
 export LANG=ja_JP.UTF-8
 
@@ -18,7 +21,6 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 
 # prompt
-#PROMPT='%{${fg[cyan]}%} $n %{${reset_color}%}'
 PROMPT='[%F{magenta}%B%n%b%f]$ '
 RPROMPT='[%F{green}%d%f]'
 
@@ -26,8 +28,9 @@ RPROMPT='[%F{green}%d%f]'
 if [ -e /usr/local/share/zsh-completions ]; then
     fpath=(/usr/local/share/zsh-completions $fpath)
 fi
-
-### path ###
+#####################################################################################
+### hogehogeenv ###
+#####################################################################################
 # pyenv
 export PYENV_ROOT=$HOME/.pyenv
 eval "$(pyenv init -)"
@@ -38,21 +41,28 @@ export GOPATH=$HOME/repo
 export GOENV_ROOT=$HOME/.goenv
 export GOENV_DISABLE_GOPATH=1
 eval "$(goenv init -)"
+export GO111MODULE=on
 export PATH=$GOENV_ROOT/bin:$GOPATH/bin:$PATH
 
 # nodenv
 export NODENV_ROOT=$HOME/.nodenv
 eval "$(nodenv init -)"
-export PATH=$NODENV_ROOT/bin:$PATH
+export PATH=$NODENV_ROOT/bin:$HOME/.yarn/bin:$PATH
 
-# nodebrew
-export NODE=$HOME/.nodebrew/current
-export PATH=$NODE/bin:$PATH
+# direnv
+eval "$(direnv hook zsh)"
 
+
+#####################################################################################
+### environment ###
+#####################################################################################
 # NeoVim
 export XDG_CONFIG_HOME=$HOME/.config
 
+
+#####################################################################################
 ### alias ###
+#####################################################################################
 alias ls='ls -GF'
 alias la='ls -la'
 alias gitl='git log --graph --all --format="%x09%an%x09%h %d %s"'
@@ -90,10 +100,9 @@ alias subl='subl $(ghq root)/$(ghq list | peco)'
 # vim
 alias v='vim $(ghq root)/$(ghq list | peco)' 
 
-# asta
-alias asta='open -n $(ls *.asta | peco)'
-
+#####################################################################################
 ### util ###
+#####################################################################################
 bindkey '^]' peco-src
 
 function peco-src() {
@@ -106,14 +115,6 @@ function peco-src() {
 }
 zle -N peco-src
 
-
-### direnv
-eval "$(direnv hook zsh)"
-
-# Go
-export GO111MODULE=on
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 ### GCP
 if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
