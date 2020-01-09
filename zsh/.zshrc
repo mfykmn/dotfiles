@@ -30,21 +30,27 @@ fi
 ### path ###
 # pyenv
 export PYENV_ROOT=$HOME/.pyenv
-# Go
+eval "$(pyenv init -)"
+export PATH=$PYENV_ROOT/bin:$HOME/Library/Python/3.7/bin:$PATH
+
+# goenv
 export GOPATH=$HOME/repo
 export GOENV_ROOT=$HOME/.goenv
-# nodebrew
-export NODE=$HOME/.nodebrew/current
-# NeoVim
-export XDG_CONFIG_HOME=$HOME/.config
-
-
-export PATH=$PYENV_ROOT/bin:$GOENV_ROOT/bin:$GOPATH/bin:$NODE/bin:$HOME/Library/Python/3.7/bin:$PATH
-eval "$(pyenv init -)"
-
-# GOENV
 export GOENV_DISABLE_GOPATH=1
 eval "$(goenv init -)"
+export PATH=$GOENV_ROOT/bin:$GOPATH/bin:$PATH
+
+# nodenv
+export NODENV_ROOT=$HOME/.nodenv
+eval "$(nodenv init -)"
+export PATH=$NODENV_ROOT/bin:$PATH
+
+# nodebrew
+export NODE=$HOME/.nodebrew/current
+export PATH=$NODE/bin:$PATH
+
+# NeoVim
+export XDG_CONFIG_HOME=$HOME/.config
 
 ### alias ###
 alias ls='ls -GF'
