@@ -11,4 +11,18 @@ Do not Update Karabiner
 
 
 # brew
-* https://github.com/ZZROTDesign/docker-clean
+* neovim
+* ghq
+* peco
+
+## env
+* nodenv
+* goenv
+* pyenv
+* tfenv
+* direnv
+
+## container
+* docker-clean
+* kubectx
+* stern
