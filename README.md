@@ -14,6 +14,7 @@ Do not Update Karabiner
 * neovim
 * ghq
 * peco
+* zsh-completions
 
 ## env
 * nodenv
