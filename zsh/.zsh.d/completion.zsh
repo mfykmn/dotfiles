@@ -6,12 +6,6 @@ mkdir -p ~/.zsh/completion
 if [ ! -f "$HOME/.zsh/completion/_docker" ]; then
     curl -L https://raw.githubusercontent.com/docker/cli/master/contrib/completion/zsh/_docker > ~/.zsh/completion/_docker
 fi
-if [ ! -f "$HOME/.zsh/completion/_kubectl" ]; then
-    kubectl completion zsh > ~/.zsh/completion/_kubectl
-fi
-if [ ! -f "$HOME/.zsh/completion/_kubesec" ]; then
-    kubesec completion zsh > ~/.zsh/completion/_kubesec
-fi
 
 # TODO AWS
 
@@ -29,6 +23,9 @@ fi
 # 補完を有効にする
 autoload -U compinit
 compinit -u
+
+source <(kubesec completion zsh)
+source <(kubectl completion zsh)
 
 #####################################################################################
 ### 補完メッセージを読みやすくする ###
