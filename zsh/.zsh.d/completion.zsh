@@ -9,6 +9,9 @@ fi
 if [ ! -f "$HOME/.zsh/completion/_kubectl" ]; then
     kubectl completion zsh > ~/.zsh/completion/_kubectl
 fi
+if [ ! -f "$HOME/.zsh/completion/_kubesec" ]; then
+    kubesec completion zsh > ~/.zsh/completion/_kubesec
+fi
 
 # TODO AWS
 
@@ -27,7 +30,9 @@ fi
 autoload -U compinit
 compinit -u
 
-# 補完メッセージを読みやすくする
+#####################################################################################
+### 補完メッセージを読みやすくする ###
+#####################################################################################
 zstyle ':completion:*' verbose yes
 zstyle ':completion:*' format '%B%d%b'
 zstyle ':completion:*:warnings' format 'No matches for: %d'

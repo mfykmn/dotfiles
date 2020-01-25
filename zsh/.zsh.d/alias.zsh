@@ -29,6 +29,9 @@ alias drmi='docker rmi $(docker images | peco |  sed -e "s/  */ /g" | cut -d" " 
 ### K8S ###
 #####################################################################################
 alias k=kubectl
+alias ksec=kubesec
+alias kctx=kubectx
+alias kns=kubens
 
 #####################################################################################
 ### Git ###

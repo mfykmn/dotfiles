@@ -1,0 +1,32 @@
+---
+- hosts: 'local'
+  connection: local
+  vars:
+    brew_packages:
+      - git
+      - jq
+      - ghq
+      - peco
+      - zsh
+      - zsh-completions
+      - neovim
+      - goenv
+      - pyenv
+      - nodenv
+      - tfenv
+      - awscli
+      - aws-iam-authenticator
+      - docker-clean
+      - kubesec
+      - kubectx
+      - stern
+    install_envs:
+      - nodenv
+  tasks:
+    - name: Update Homebrew
+      homebrew:
+        update_homebrew: yes
+    - name: Install Homebrew Packages
+      homebrew:
+        name: "{{ brew_packages }}"
+        state: "present"
