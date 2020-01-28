@@ -24,8 +24,9 @@ fi
 autoload -U compinit
 compinit -u
 
-source <(kubesec completion zsh)
 source <(kubectl completion zsh)
+source <(kubesec completion zsh)
+source <(helm completion zsh)
 
 #####################################################################################
 ### 補完メッセージを読みやすくする ###
