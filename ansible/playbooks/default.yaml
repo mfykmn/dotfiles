@@ -15,10 +15,11 @@
       - nodenv
       - tfenv
       - awscli
-      - aws-iam-authenticator
       - docker-clean
       - kubesec
       - kubectx
+      - helm
+      - kustomize
       - stern
     install_envs:
       - nodenv
