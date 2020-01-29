@@ -27,6 +27,7 @@ compinit -u
 source <(kubectl completion zsh)
 source <(kubesec completion zsh)
 source <(helm completion zsh)
+source <(eksctl completion zsh)
 
 #####################################################################################
 ### 補完メッセージを読みやすくする ###
