@@ -21,6 +21,7 @@
       - helm
       - kustomize
       - stern
+      - weaveworks/tap/eksctl
     install_envs:
       - nodenv
   tasks:
