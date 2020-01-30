@@ -22,6 +22,7 @@
       - kustomize
       - stern
       - weaveworks/tap/eksctl
+      - fluxctl
     install_envs:
       - nodenv
   tasks:
