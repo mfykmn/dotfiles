@@ -7,6 +7,7 @@
       - jq
       - ghq
       - peco
+      - fzf
       - zsh
       - zsh-completions
       - neovim
