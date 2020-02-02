@@ -20,7 +20,6 @@
       - kubesec
       - kubectx
       - helm
-      - kustomize
       - stern
       - weaveworks/tap/eksctl
       - fluxctl
