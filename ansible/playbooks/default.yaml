@@ -4,6 +4,7 @@
   vars:
     brew_packages:
       - git
+      - tree
       - jq
       - ghq
       - peco
