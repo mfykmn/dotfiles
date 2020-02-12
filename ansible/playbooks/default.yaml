@@ -16,7 +16,6 @@
       - pyenv
       - nodenv
       - tfenv
-      - awscli
       - docker-clean
       - kubesec
       - kubectx
