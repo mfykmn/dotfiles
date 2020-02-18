@@ -32,6 +32,7 @@ alias k=kubectl
 alias ksec=kubesec
 alias kctx=kubectx
 alias kns=kubens
+alias kval=kubeval
 
 #####################################################################################
 ### Git ###

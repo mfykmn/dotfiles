@@ -2,6 +2,8 @@
 - hosts: 'local'
   connection: local
   vars:
+    brew_taps:
+      - garethr/kubeval
     brew_packages:
       - git
       - tree
@@ -19,6 +21,7 @@
       - docker-clean
       - kubesec
       - kubectx
+      - kubeval
       - helm
       - stern
       - weaveworks/tap/eksctl
@@ -35,6 +38,10 @@
     - name: Update Homebrew
       homebrew:
         update_homebrew: yes
+    - name: Use tap
+      homebrew_tap:
+        name: "{{ brew_taps }}"
+        state: "present"
     - name: Install Homebrew Packages
       homebrew:
         name: "{{ brew_packages }}"
