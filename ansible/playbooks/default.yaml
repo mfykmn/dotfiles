@@ -24,6 +24,7 @@
       - kubectx
       - kubeval
       - helm
+      - helmfile
       - stern
       - weaveworks/tap/eksctl
       - fluxctl
