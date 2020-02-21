@@ -7,6 +7,7 @@ if [ ! -f "$HOME/.zsh/completion/_docker" ]; then
     curl -L https://raw.githubusercontent.com/docker/cli/master/contrib/completion/zsh/_docker > ~/.zsh/completion/_docker
 fi
 
+pip3 completion --zsh > ~/.zsh/completion/_pip3
 eksctl completion zsh > ~/.zsh/completion/_eksctl
 kubectl completion zsh > ~/.zsh/completion/_kubectl
 helm completion zsh > ~/.zsh/completion/_helm

@@ -13,6 +13,7 @@
       - fzf
       - zsh
       - zsh-completions
+      - libev # Locustで使うために入れている
       - neovim
       - goenv
       - pyenv
@@ -30,10 +31,12 @@
       - kindle
       - 1password
       - karabiner-elements
-      - google-chrome
+#      - google-chrome
       - slack
       - zoom
       - notion
+    pip3_packages:
+      - locustio==0.13.5
   tasks:
     - name: Update Homebrew
       homebrew:
@@ -53,3 +56,13 @@
         install_options: "appdir=/Applications"
         accept_external_apps: yes
       with_items: "{{ brew_cask_packages }}"
+    - name: Update Pip3
+      pip:
+        name: pip
+        executable: pip3
+        state: latest
+    - name: Install Pip3 Packages
+      pip:
+        name: "{{ pip3_packages }}"
+        executable: pip3
+        state: present
