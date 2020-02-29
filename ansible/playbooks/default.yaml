@@ -19,7 +19,9 @@
       - pyenv
       - nodenv
       - tfenv
+      - docker
       - docker-clean
+      - kubectl
       - kubesec
       - kubectx
       - kubeval
@@ -32,6 +34,7 @@
       - kindle
       - 1password
       - karabiner-elements
+      - docker
 #      - google-chrome
       - slack
       - zoom
