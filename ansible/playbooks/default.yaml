@@ -25,6 +25,7 @@
       - kubesec
       - kubectx
       - kubeval
+      - kind
       - helm
       - helmfile
       - stern
