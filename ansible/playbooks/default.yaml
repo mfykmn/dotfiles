@@ -30,6 +30,7 @@
       - helmfile
       - stern
       - weaveworks/tap/eksctl
+      - datawire/blackbird/telepresence
       - fluxctl
     brew_cask_packages:
       - google-japanese-ime
@@ -37,6 +38,7 @@
       - 1password
       - karabiner-elements
       - docker
+      - osxfuse
 #      - google-chrome
       - slack
       - zoom
