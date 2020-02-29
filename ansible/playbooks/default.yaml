@@ -31,6 +31,7 @@
       - weaveworks/tap/eksctl
       - fluxctl
     brew_cask_packages:
+      - google-japanese-ime
       - kindle
       - 1password
       - karabiner-elements
@@ -38,6 +39,7 @@
 #      - google-chrome
       - slack
       - zoom
+      - spotify
       - notion
     pip3_packages:
       - locustio==0.13.5
