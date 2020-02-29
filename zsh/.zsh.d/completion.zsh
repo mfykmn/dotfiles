@@ -11,6 +11,7 @@ pip3 completion --zsh > ~/.zsh/completion/_pip3
 eksctl completion zsh > ~/.zsh/completion/_eksctl
 kubectl completion zsh > ~/.zsh/completion/_kubectl
 helm completion zsh > ~/.zsh/completion/_helm
+kind completion zsh > ~/.zsh/completion/_kind
 # TODO AWS
 
 # completionを追加
