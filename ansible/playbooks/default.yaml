@@ -25,6 +25,7 @@
       - kubesec
       - kubectx
       - kubeval
+      - txn2/tap/kubefwd
       - kind
       - helm
       - helmfile
