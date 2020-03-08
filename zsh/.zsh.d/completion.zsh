@@ -12,6 +12,7 @@ eksctl completion zsh > ~/.zsh/completion/_eksctl
 kubectl completion zsh > ~/.zsh/completion/_kubectl
 helm completion zsh > ~/.zsh/completion/_helm
 kind completion zsh > ~/.zsh/completion/_kind
+argocd completion zsh > ~/.zsh/completion/_argocd
 # TODO AWS
 
 # completionを追加

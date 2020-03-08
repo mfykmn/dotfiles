@@ -4,6 +4,7 @@
   vars:
     brew_taps:
       - garethr/kubeval
+      - argoproj/tap
     brew_packages:
       - git
       - tree
@@ -33,6 +34,7 @@
       - weaveworks/tap/eksctl
       - datawire/blackbird/telepresence
       - fluxctl
+      - argoproj/tap/argocd
     brew_cask_packages:
       - google-japanese-ime
       - kindle
