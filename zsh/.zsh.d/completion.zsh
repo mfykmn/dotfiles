@@ -13,7 +13,7 @@ kubectl completion zsh > ~/.zsh/completion/_kubectl
 helm completion zsh > ~/.zsh/completion/_helm
 kind completion zsh > ~/.zsh/completion/_kind
 argocd completion zsh > ~/.zsh/completion/_argocd
-# TODO AWS
+# TODO: complete -C aws_completer aws うまくできない...
 
 # completionを追加
 if [ -e /usr/local/share/zsh/site-functions ]; then
