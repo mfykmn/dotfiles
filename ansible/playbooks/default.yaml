@@ -37,6 +37,7 @@
       - fluxctl
       - argoproj/tap/argocd
       - aylei/tap/kubectl-debug
+      - derailed/popeye/popeye
     brew_cask_packages:
       - google-japanese-ime
       - kindle
