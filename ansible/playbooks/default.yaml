@@ -33,8 +33,10 @@
       - stern
       - weaveworks/tap/eksctl
       - datawire/blackbird/telepresence
+      - istioctl
       - fluxctl
       - argoproj/tap/argocd
+      - aylei/tap/kubectl-debug
     brew_cask_packages:
       - google-japanese-ime
       - kindle
@@ -48,7 +50,9 @@
       - spotify
       - notion
     pip3_packages:
+      - botocore==1.15.17
       - locustio==0.13.5
+      - aws-mfa
   tasks:
     - name: Update Homebrew
       homebrew:
