@@ -19,6 +19,7 @@
       - goenv
       - pyenv
       - nodenv
+      - circleci
       - tfenv
       - docker
       - docker-clean
@@ -45,6 +46,7 @@
       - karabiner-elements
       - docker
       - osxfuse
+      - line
 #      - google-chrome
       - slack
       - zoom
