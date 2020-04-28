@@ -41,6 +41,7 @@
       - derailed/popeye/popeye
     brew_cask_packages:
       - google-japanese-ime
+      - dropbox
       - kindle
       - 1password
       - karabiner-elements
