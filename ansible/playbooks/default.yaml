@@ -48,7 +48,7 @@
       - karabiner-elements
       - docker
       - osxfuse
-      - line
+#      - line
 #      - google-chrome
       - slack
       - zoom
@@ -78,11 +78,17 @@
         accept_external_apps: yes
       with_items: "{{ brew_cask_packages }}"
     - name: Update Pip3
+      become: true
+      become_method: sudo
+      become_flags: -H
       pip:
         name: pip
         executable: pip3
         state: latest
     - name: Install Pip3 Packages
+      become: true
+      become_method: sudo
+      become_flags: -H
       pip:
         name: "{{ pip3_packages }}"
         executable: pip3
