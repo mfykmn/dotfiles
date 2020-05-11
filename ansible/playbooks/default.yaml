@@ -26,6 +26,7 @@
       - kubectl
       - kubesec
       - kubectx
+      - kube-ps1
       - kubeval
       - txn2/tap/kubefwd
       - kind
