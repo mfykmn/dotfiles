@@ -10,6 +10,10 @@ ln -nfs ~/dotfiles/vim/dein_lasy.toml ~/.config/nvim/dein_lasy.toml
 ln -nfs ~/dotfiles/zsh/.zshrc ~/.zshrc
 ln -nfs ~/dotfiles/zsh/.zsh.d ~/.zsh.d
 
+### powerline-shell
+mkdir -p ~/.config/powerline-shell
+ln -nfs ~/dotfiles/powerline-shell/config.json ~/.config/powerline-shell/config.json
+
 ### Sierra
 ln -nfs ~/dotfiles/karabiner.json ~/.config/karabiner/karabiner.json
 

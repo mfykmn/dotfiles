@@ -58,6 +58,7 @@
       - botocore==1.15.17
       - locustio==0.13.5
       - aws-mfa
+      - powerline-shell
   tasks:
     - name: Update Homebrew
       homebrew:
