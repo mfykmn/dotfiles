@@ -18,10 +18,16 @@ SAVEHIST=1000000
 # prompt
 source "$(brew --prefix)/opt/kube-ps1/share/kube-ps1.sh"
 
+aws_prof() {
+  local profile="${AWS_PROFILE:=default}"
+
+  echo "%{$fg_bold[blue]%}aws:(%{$fg[yellow]%}${profile}%{$fg_bold[blue]%})%{$reset_color%} "
+}
+
 precmd () {
   PROMPT='$(kube_ps1)
 $(powerline-shell --shell zsh $?)'
-  RPROMPT=''
+  RPROMPT='$(aws_prof)'
 }
 
 add-zsh-hook precmd precmd
