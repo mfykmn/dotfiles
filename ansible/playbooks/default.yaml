@@ -61,6 +61,8 @@
       - locustio==0.13.5
       - aws-mfa
       - powerline-shell
+    npm_packages:
+      - awsp
   tasks:
     - name: Update Homebrew
       homebrew:
@@ -96,3 +98,13 @@
         name: "{{ pip3_packages }}"
         executable: pip3
         state: present
+#    - name: Install npm Packages
+#      become: true
+#      become_method: sudo
+#      npm:
+#        name: "{{ npm_packages }}"
+#        global: yes
+#        state: latest
+#        notwork...!!! # executable: "{{ ansible_env.HOME }}/.nodenv/shims/npm"
+#      environment:
+#        PATH: "{{ ansible_env.HOME }}/.nodenv/shims:{{ ansible_env.PATH }}"
