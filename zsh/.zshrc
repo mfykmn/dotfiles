@@ -37,7 +37,7 @@ export PATH=$GOENV_ROOT/bin:$GOPATH/bin:$PATH
 #####################################################################################
 export NODENV_ROOT=$HOME/.nodenv
 eval "$(nodenv init -)"
-export PATH=$NODENV_ROOT/bin:$HOME/.yarn/bin:$PATH
+export PATH=$NODENV_ROOT/shims/bin:$HOME/.yarn/bin:$PATH
 
 #####################################################################################
 ### Haskel ###
