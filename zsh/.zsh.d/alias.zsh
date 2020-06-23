@@ -19,7 +19,8 @@ alias subl='subl $(ghq root)/$(ghq list | peco)'
 #####################################################################################
 # alias awsp='source _awsp' > not work
 alias awsp='export AWS_PROFILE=$(sed -n -e "s/^\[profile \(.*\)\]/\1/gp; s/^\[\(.*\)\\]$/\1/gp" ~/.aws/config | fzf)'
-
+alias awsmfa='aws-mfa --profile ${AWS_PROFILE}'
+alias kup='aws eks update-kubeconfig --name ${AWS_PROFILE}'
 #####################################################################################
 ### Docker ###
 #####################################################################################
