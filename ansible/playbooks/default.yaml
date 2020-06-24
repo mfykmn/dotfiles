@@ -14,6 +14,7 @@
       - fzf
       - zsh
       - zsh-completions
+      - tmux
       - libev # Locustで使うために入れている
       - neovim
       - goenv
