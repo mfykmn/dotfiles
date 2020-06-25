@@ -21,6 +21,7 @@
       - pyenv
       - nodenv
       - circleci
+      - awscli
       - tfenv
       - docker
       - docker-clean
