@@ -16,6 +16,7 @@
       - zsh-completions
       - tmux
       - libev # Locustで使うために入れている
+      - cfssl
       - neovim
       - goenv
       - pyenv
