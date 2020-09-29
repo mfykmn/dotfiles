@@ -24,6 +24,7 @@
       - circleci
       - awscli
       - tfenv
+      # - hashicorp/tap/terraform TODO
       - docker
       - docker-clean
       - kubectl
