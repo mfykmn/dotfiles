@@ -18,13 +18,12 @@
       - libev # Locustで使うために入れている
       - cfssl
       - neovim
-      - goenv
+      # - goenv TODO: 最新のversionが取得できないので手動で　brew install --HEAD goenv する
       - pyenv
       - nodenv
       - circleci
       - awscli
-      - tfenv
-      # - hashicorp/tap/terraform TODO
+      - tfenv # TODO: hashicorp/tap/terraform に切り替えるかどうするか悩み中
       - docker
       - docker-clean
       - kubectl
