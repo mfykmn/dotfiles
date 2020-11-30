@@ -2,7 +2,7 @@
 ```bash
 $ brew install ansible
 $ cd ./ansible
-$ ansible-playbook playbooks/default.yaml
+$ ansible-playbook playbooks/mac.yaml
 ```
 
 # dotfilesの適用
