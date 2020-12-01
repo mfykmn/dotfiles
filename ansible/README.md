@@ -16,5 +16,5 @@
 ### Usage
 
 ```ShellSession
-user@host: ~/dotfiles/ansible $ ansible-playbook playbooks/mac.yml
+user@host: ~/dotfiles/ansible $ ansible-playbook playbooks/mac.yaml
 ```

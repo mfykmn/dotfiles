@@ -27,7 +27,6 @@
       - docker
       - docker-clean
       - kubectl
-      - kubesec
       - kubectx
       - kube-ps1
       - kubeval
