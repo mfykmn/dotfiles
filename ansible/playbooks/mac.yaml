@@ -70,7 +70,7 @@
     - name: Update Homebrew
       homebrew:
         update_homebrew: yes
-    - name: Use tap
+    - name: Add homebrew tap repositories
       homebrew_tap:
         name: "{{ brew_taps }}"
         state: "present"
