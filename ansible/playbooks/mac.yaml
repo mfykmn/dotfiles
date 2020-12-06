@@ -43,14 +43,14 @@
       - aylei/tap/kubectl-debug
       - derailed/popeye/popeye
     brew_cask_packages:
-#      - google-japanese-ime TODO: Invalid cask
+#      - google-japanese-ime TODO: Invalid cask. brew install --cask google-japanese-ime --appdir /Applications
       - dropbox
       - kindle
       - deepl
       - 1password
-#      - gas-mask TODO: Invalid cask
+#      - gas-mask TODO: Invalid cask. brew install --cask gas-mask --appdir /Applications
       - discord
-#      - karabiner-elements TODO: Invalid cask
+#      - karabiner-elements TODO: Invalid cask. brew install --cask karabiner-elements --appdir /Applications
       - docker
       - osxfuse
 #      - line

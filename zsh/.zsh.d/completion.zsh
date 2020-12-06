@@ -30,7 +30,6 @@ fi
 autoload -U compinit
 compinit -u
 
-source <(kubesec completion zsh)
 source <(stern --completion zsh)
 
 #####################################################################################
