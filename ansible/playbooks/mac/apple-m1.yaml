@@ -1,0 +1,63 @@
+---
+- hosts: 'local'
+  connection: local
+  vars:
+    brew_packages:
+      - git
+      - tree
+      - jq
+      - zsh
+      - zsh-completions
+      - tmux
+      - awscli
+      - docker-clean
+    brew_cask_packages:
+      - google-japanese-ime
+      - dropbox
+      - kindle
+      - deepl
+      - 1password
+      - gas-mask
+      - discord
+      - karabiner-elements
+      # - docker TODO: M1対応がまだなのでデベロッパー用のdmgからインストールした
+      - google-chrome
+      - slack
+      - zoom
+      - spotify
+      - notion
+    pip3_packages:
+      - aws-mfa
+      - powerline-shell
+  tasks:
+    - name: Update Homebrew
+      homebrew:
+        update_homebrew: yes
+    - name: Install Homebrew Packages
+      homebrew:
+        name: "{{ item }}"
+        state: "present"
+      with_items: "{{ brew_packages }}"
+    - name: Install Homebrew Cask Packages
+      homebrew_cask:
+        name: "{{ item }}"
+        state: "present"
+        install_options: "appdir=/Applications"
+        accept_external_apps: yes
+      with_items: "{{ brew_cask_packages }}"
+    - name: Update Pip3
+      become: true
+      become_method: sudo
+      become_flags: -H
+      pip:
+        name: pip
+        executable: pip3
+        state: latest
+    - name: Install Pip3 Packages
+      become: true
+      become_method: sudo
+      become_flags: -H
+      pip:
+        name: "{{ pip3_packages }}"
+        executable: pip3
+        state: present
