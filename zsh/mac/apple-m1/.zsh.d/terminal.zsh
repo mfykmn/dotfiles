@@ -28,6 +28,5 @@ precmd () {
   RPROMPT='$(aws_prof)'
 }
 
-add-zsh-hook precmd precmd
 setopt PROMPT_SUBST
 setopt TRANSIENT_RPROMPT

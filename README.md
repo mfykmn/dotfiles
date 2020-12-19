@@ -4,6 +4,7 @@
 
 ## Mac(intel)
 ### Requirement
+- ターミナルのフォントを[SourceCodePro](./fonts)に変える
 
 ### Usage
 
@@ -13,6 +14,7 @@ user@host: ~/dotfiles $ sh dotfilesLink.macIntel.sh
 
 ## Mac(apple M1)
 ### Requirement
+- ターミナルのフォントを[SourceCodePro](./fonts)に変える
 
 ### Usage
 
