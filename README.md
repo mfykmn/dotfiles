@@ -1,8 +1,21 @@
-# Github
-https://docs.github.com/ja/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+# dotfiles
 
-# dotfilesの適用
-```bash
-$ cd dotfiles
-$ sh dotfilesLink.sh
+個人PCの初期環境設定で設定ファイルを管理する
+
+## Mac(intel)
+### Requirement
+
+### Usage
+
+```ShellSession
+user@host: ~/dotfiles $ sh dotfilesLink.macIntel.sh
+```
+
+## Mac(apple M1)
+### Requirement
+
+### Usage
+
+```ShellSession
+user@host: ~/workspace/dotfiles $ sh dotfilesLink.macAppleM1.sh
 ```

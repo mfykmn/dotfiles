@@ -7,8 +7,8 @@ ln -nfs ~/dotfiles/vim/dein.toml ~/.config/nvim/dein.toml
 ln -nfs ~/dotfiles/vim/dein_lasy.toml ~/.config/nvim/dein_lasy.toml
 
 ### zsh
-ln -nfs ~/dotfiles/zsh/.zshrc ~/.zshrc
-ln -nfs ~/dotfiles/zsh/.zsh.d ~/.zsh.d
+ln -nfs ~/dotfiles/zsh/mac/intel/.zshrc ~/.zshrc
+ln -nfs ~/dotfiles/zsh/mac/intel/.zsh.d ~/.zsh.d
 
 ### powerline-shell
 mkdir -p ~/.config/powerline-shell
