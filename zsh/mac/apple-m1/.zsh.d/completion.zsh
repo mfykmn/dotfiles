@@ -8,6 +8,7 @@ if [ ! -f "$HOME/.zsh/completion/_docker" ]; then
 fi
 
 pip3 completion --zsh > ~/.zsh/completion/_pip3
+kubectl completion zsh > ~/.zsh/completion/_kubectl
 
 # completionを追加
 if [ -e /usr/local/share/zsh/site-functions ]; then
