@@ -85,4 +85,8 @@ zle -N peco-src
 ### Java ###
 #####################################################################################
 export SDKMAN_DIR="$HOME/.sdkman"
+
+# SDKMANがインストールされていなかった場合はインストール
+[[ ! -d ${SDKMAN_DIR} ]] && curl -s "https://get.sdkman.io" | bash
+
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
