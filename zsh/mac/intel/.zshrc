@@ -80,3 +80,9 @@ function peco-src() {
   zle -R -c
 }
 zle -N peco-src
+
+#####################################################################################
+### Java ###
+#####################################################################################
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
