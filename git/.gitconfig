@@ -12,7 +12,7 @@
   excludesfile = ~/dotfiles/git/.gitignore_global
 
 [ghq]
-  root = ~/repo/src
+  root = ~/workspace
 
 [init]
   templatedir = ~/.git_template/hooks
