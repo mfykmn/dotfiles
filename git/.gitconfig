@@ -1,5 +1,8 @@
+[user]
+  name = mfykmn
+
 [includeIf "gitdir:~/workspace/github.com/"]
-  path = ~/.dotfiles/git/gitconfig.github
+  path = ~/dotfiles/git/gitconfig.github
 
 [color]
   ui = auto
