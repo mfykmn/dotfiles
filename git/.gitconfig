@@ -1,6 +1,5 @@
-[user]
-  name = mfykmn
-  email = mfykmn@gmail.com
+[includeIf "gitdir:~/workspace/github.com/"]
+  path = ~/.dotfiles/git/gitconfig.github
 
 [color]
   ui = auto
