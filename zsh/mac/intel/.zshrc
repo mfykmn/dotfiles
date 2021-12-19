@@ -82,7 +82,7 @@ function peco-src() {
 zle -N peco-src
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zs
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #####################################################################################
 ### Java ###
