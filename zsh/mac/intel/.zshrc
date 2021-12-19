@@ -81,6 +81,9 @@ function peco-src() {
 }
 zle -N peco-src
 
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zs
+
 #####################################################################################
 ### Java ###
 #####################################################################################
@@ -90,3 +93,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ ! -d ${SDKMAN_DIR} ]] && curl -s "https://get.sdkman.io" | bash
 
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
