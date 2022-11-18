@@ -6,4 +6,8 @@ do
     echo "Do not push to master branch!!!"
     exit 1
   fi
+    if [[ "${remote_ref##refs/heads/}" = "main" ]]; then
+      echo "Do not push to main branch!!!"
+      exit 1
+    fi
 done

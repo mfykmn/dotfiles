@@ -21,3 +21,13 @@ user@host: ~/dotfiles $ sh dotfilesLink.macIntel.sh
 ```ShellSession
 user@host: ~/workspace/dotfiles $ sh dotfilesLink.macAppleM1.sh
 ```
+
+## Mac(apple M2)
+### Requirement
+- ターミナルのフォントを[SourceCodePro](./fonts)に変える
+
+### Usage
+
+```ShellSession
+user@host: ~/workspace/dotfiles $ sh dotfilesLink.macAppleM2.sh
+```
