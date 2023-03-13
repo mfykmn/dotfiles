@@ -24,6 +24,14 @@ eval "$(nodenv init -)"
 export PATH=$NODENV_ROOT/shims/bin:$HOME/.yarn/bin:$PATH
 
 #####################################################################################
+### Ruby ###
+#####################################################################################
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+[[ -d ~/.rbenv  ]] && \
+export PATH=${HOME}/.rbenv/bin:${PATH} && \
+eval "$(rbenv init -)"
+
+#####################################################################################
 ### Java ###
 #####################################################################################
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -32,3 +40,11 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ ! -d ${SDKMAN_DIR} ]] && curl -s "https://get.sdkman.io" | bash
 
 source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+#####################################################################################
+### Android ###
+#####################################################################################
+export PATH=$HOME/Library/Android/sdk/emulator:$PATH
+export PATH=$HOME/Library/Android/sdk:$PATH
+export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+
