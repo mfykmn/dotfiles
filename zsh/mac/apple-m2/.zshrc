@@ -48,3 +48,7 @@ export PATH=$HOME/Library/Android/sdk/emulator:$PATH
 export PATH=$HOME/Library/Android/sdk:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 
+#####################################################################################
+### Flutter ###
+#####################################################################################
+export PATH=$HOME/flutter/bin:$PATH
