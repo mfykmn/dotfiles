@@ -44,12 +44,18 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 #####################################################################################
 ### Android ###
 #####################################################################################
-export PATH=$HOME/Library/Android/sdk/emulator:$PATH
-export PATH=$HOME/Library/Android/sdk:$PATH
-export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
 
 #####################################################################################
 ### Flutter ###
 #####################################################################################
-export PATH=$HOME/flutter/bin:$PATH
-export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH=$PATH:$HOME/flutter/bin
+export PATH=$PATH:$HOME/.pub-cache/bin
+
+## maestro
+eval "$(task completion)"
+export PATH=$PATH:$HOME/.maestro/bin
