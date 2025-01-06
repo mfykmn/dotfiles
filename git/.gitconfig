@@ -3,7 +3,7 @@
   email = mfykmn@gmail.com
 
 [includeIf "gitdir:~/workspace/github.com/"]
-  path = ~/dotfiles/git/gitconfig.github
+  path = ~/workspace/dotfiles/git/gitconfig.github
 
 [color]
   ui = auto
@@ -12,7 +12,8 @@
   default = current
 
 [core]
-  excludesfile = ~/dotfiles/git/.gitignore_global
+  excludesfile = ~/workspace/dotfiles/git/.gitignore_global
+  autocrlf = input
 
 [ghq]
   root = ~/workspace
