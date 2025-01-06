@@ -56,10 +56,10 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$HOME/flutter/bin
 export PATH=$PATH:$HOME/.pub-cache/bin
 
-## maestro
-export PATH=$PATH:$HOME/.maestro/bin
+#####################################################################################
+### Python ###
+#####################################################################################
 
-eval "$(task completion)"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/m-kamono/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -75,3 +75,10 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+#####################################################################################
+### E2E ###
+#####################################################################################
+
+## maestro
+export PATH=$PATH:$HOME/.maestro/bin
+eval "$(task completion)"
