@@ -1,9 +1,0 @@
-{
-  "segments": [
-    "time",
-    "cwd",
-    "git",
-    "root"
-  ],
-  "theme": "gruvbox"
-}

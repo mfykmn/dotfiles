@@ -2,32 +2,10 @@
 
 個人PCの初期環境設定で設定ファイルを管理する
 
-## Mac(intel)
-### Requirement
-- ターミナルのフォントを[SourceCodePro](./fonts)に変える
+## Mac(apple M4)
 
 ### Usage
 
 ```ShellSession
-user@host: ~/dotfiles $ sh dotfilesLink.macIntel.sh
-```
-
-## Mac(apple M1)
-### Requirement
-- ターミナルのフォントを[SourceCodePro](./fonts)に変える
-
-### Usage
-
-```ShellSession
-user@host: ~/workspace/dotfiles $ sh dotfilesLink.macAppleM1.sh
-```
-
-## Mac(apple M2)
-### Requirement
-- ターミナルのフォントを[SourceCodePro](./fonts)に変える
-
-### Usage
-
-```ShellSession
-user@host: ~/workspace/dotfiles $ sh dotfilesLink.macAppleM2.sh
+user@host: ~/workspace/dotfiles $ sh dotfilesLink.macAppleM4.sh
 ```

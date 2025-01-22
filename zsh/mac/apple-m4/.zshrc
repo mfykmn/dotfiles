@@ -21,6 +21,13 @@ zle -N peco-src
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# mise
+eval "$(mise activate zsh)"
+export PATH="$HOME/.local/share/mise/shims:$PATH"
+
+# starship
+eval "$(starship init zsh)"
+
 ####################################################################################
 ### zsh ###
 #####################################################################################
@@ -28,7 +35,7 @@ zle -N peco-src
 ZSHHOME="${HOME}/.zsh.d"
 
 if [ -d $ZSHHOME -a -r $ZSHHOME -a \
-     -x $ZSHHOME ]; then
+    -x $ZSHHOME ]; then
     for i in $ZSHHOME/*; do
         [[ ${i##*/} = *.zsh ]] &&
             [ \( -f $i -o -h $i \) -a -r $i ] && . $i
