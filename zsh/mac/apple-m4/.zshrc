@@ -28,6 +28,11 @@ export PATH="$HOME/.local/share/mise/shims:$PATH"
 # starship
 eval "$(starship init zsh)"
 
+# Rancher Desktop
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/m-kamono/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
 ####################################################################################
 ### zsh ###
 #####################################################################################

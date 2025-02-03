@@ -3,11 +3,11 @@
 #####################################################################################
 mkdir -p ~/.zsh/completion
 
-# if [ ! -f "$HOME/.zsh/completion/_docker" ]; then
-#     curl -L https://raw.githubusercontent.com/docker/cli/master/contrib/completion/zsh/_docker > ~/.zsh/completion/_docker
-# fi
-
 # completionを追加
+if [ ! -f "$HOME/.zsh/completion/_docker" ]; then
+    curl -L https://raw.githubusercontent.com/docker/cli/master/contrib/completion/zsh/_docker > ~/.zsh/completion/_docker
+fi
+
 if [ -e /usr/local/share/zsh/site-functions ]; then
     fpath=(/usr/local/share/zsh/site-functions $fpath)
 fi
@@ -21,6 +21,8 @@ fi
 # 補完を有効にする
 autoload -U compinit
 compinit -u
+
+eval "$(limactl completion zsh)"
 
 #####################################################################################
 ### 補完メッセージを読みやすくする ###
