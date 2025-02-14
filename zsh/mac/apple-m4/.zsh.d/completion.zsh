@@ -22,7 +22,7 @@ fi
 autoload -U compinit
 compinit -u
 
-eval "$(limactl completion zsh)"
+eval "$(limactl completion zsh)" # いらない？
 
 #####################################################################################
 ### 補完メッセージを読みやすくする ###
